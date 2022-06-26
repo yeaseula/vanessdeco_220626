@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>test</title>
+
+
+    <style>
+
+      body {margin:0;}
+
+      ul,ol,li {list-style:none; margin:0; padding:0;}
+
+      li {float:left; margin:5px 10px 0 0;}
+
+      li:hover {cursor:pointer;}
+
+      #productimg {width:400px; height:200px; background-color:gold; }
+
+      #smalling {width:100%; height:100%; background-color:gold;}
+
+      .w1 {width:400px; height:300px;}
+
+      #smalling img {width:100px; height:100px; }
+
+    </style>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+  </head>
+
+  <body>
+
+
+    <div id="productimg">
+
+      <img src="img/product.JPG" alt="product" id="cimg" class="w1"> 
+
+      <div id="smalling">
+        <ul>
+          <li><img src="img/detail1.JPG" alt="img/detail1.JPG"></li>
+          <li><img src="img/detail2.JPG" alt="img/detail2.JPG"></li>
+          <li><img src="img/product.JPG" alt="img/detail3.JPG"></li>
+        </ul>
+      </div>
+
+
+
+    </div>
+
+    <script>
+
+      $(document).ready(function(){
+        $("#smalling li:first-child").mouseover(function(){
+          $("#cimg").attr("src","img/detail1.JPG");
+        });
+
+        $("#smalling li:nth-child(2)").mouseover(function(){
+          $("#cimg").attr("src","img/detail2.JPG");
+        });
+        $("#smalling li:nth-child(3)").mouseover(function(){
+          $("#cimg").attr("src","img/product.JPG");
+        });
+      });
+
+
+    </script>
+
+  </body>
+
+
+</html>
+

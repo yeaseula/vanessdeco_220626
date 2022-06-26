@@ -1,0 +1,187 @@
+﻿@charset "utf-8";
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+ul, li, ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@200;400&family=Lexend+Tera:wght@167&family=My+Soul&display=swap');
+
+
+/*헤더*/
+header {
+    width: 1260px;
+    height: 103px;
+    margin: 0 auto;
+}
+
+#logo {
+    width: 186px;
+    height: 74px;
+    float: left;
+    margin: 16px 0 0 30px;
+}
+
+    #logo img {
+        width: 100%;
+        height: 100%;
+    }
+
+    /*오른쪽 서치 아이콘*/
+
+#login {
+    width: 430px;
+    height: 71px;
+    float: right;
+    margin: 18px 10px 0 0px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    text-align:center;
+}
+
+    #login > .search_box {
+     width:62%; height:40px;
+     display:flex; 
+     justify-content:center;
+    }
+
+.search_icon {
+    width: 19%;
+    height: 40px;
+    border-bottom: 2px solid #333;
+    
+}
+
+    .search_icon > a > img {
+        width: 65%;
+        height: 35px;
+    }
+
+.search {
+    width: 81%;
+    height: 40px;
+    border: none;
+    border-bottom: 2px solid #333;
+}
+
+/*아이콘 두개*/
+
+#login > .icon {
+    width: 45px;
+    height: 40px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+    #login > .icon > a > img {
+     width:68%; height:70%;
+    }
+
+
+    /*베스트 타임특가 핫딜 리퍼세일*/
+
+.nav1 {
+    width: 470px;
+    height: 71px;
+    float: left;
+    margin: 18px 0 0 10px;
+}
+
+    .nav1 > ul {
+        font-size: 22px;
+        font-family: 'Gothic A1', sans-serif;
+        margin: 23px;
+    }
+
+        .nav1 > ul > li > a {
+            float: left;
+            color: #333;
+            padding: 0px 18px;
+            font-weight: bold;
+        }
+
+            .nav1 > ul > li > a:hover {
+                color: orangered;
+            }
+
+.nav2 {
+    width: 1260px;
+    height: 47px;
+    margin: 0 auto;
+}
+
+    .nav2 > ul {
+        font-size: 16px;
+        font-family: 'Gothic A1', sans-serif;
+        margin: 8px 0 0 41px;
+    }
+
+        .nav2 > ul > li > a {
+            float: left;
+            margin: 8px 44px 8px 0px;
+            color: #333;
+            font-weight: bolder;
+        }
+
+            .nav2 > ul > li > a:hover {
+                color: orangered;
+            }
+
+
+/*하단*/
+
+footer {
+    width: 100%;
+    height: 180px;
+    background-color: #eee;
+    border-top: #333;
+}
+
+    footer .box {
+        width: 1020px;
+        height: 160px;
+        margin: 0 auto;
+    }
+
+        footer .box ul {
+            font-size: 12px;
+            color: #555;
+            width: 990px;
+            height: 33px;
+            padding: 30px 0 0 30px;
+        }
+
+            footer .box ul li {
+                float: left;
+                margin: 0 0 0 10px;
+            }
+
+        footer .box p {
+            font-size: 11px;
+            width: 990px;
+            height: 70px;
+            padding: 30px 0 0 10px;
+            float: left;
+            color: #333
+        }
+
+    footer > p {
+        font-size: 12px;
+        text-align: center;
+        width: 100%;
+        height: 40px;
+        padding: 15px 0px;
+        margin: 0 auto;
+        color: #fff;
+        background-color: #333;
+    }
